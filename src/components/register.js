@@ -30,7 +30,12 @@ class Register extends Component {
       })
   }
 
- 
+ change = (event) => {
+   let workStatus = event.target.value;
+   this.setState({
+     workStatus
+   })
+ }
 
     render() {
 
@@ -55,11 +60,11 @@ class Register extends Component {
               <input type="text" ref={(input) => {this.education = input}} placeholder="Highest Education" id="education"></input>
                 <br/> <br/>
               <label>Work Status:  </label>
-                <select id="workstatus">
-                    <option>GC</option>
-                    <option>H1B</option>
-                    <option>OPT</option>
-                    <option>Other</option>
+                <select id="workstatus" onChange={this.change}>
+                    <option value="GC">GC</option>
+                    <option value="H1B">H1B</option>
+                    <option value="OPT">OPT</option>
+                    <option value="other">Other</option>
                 </select>
               <br/> <br/>
             <button type="submit" id="register" onClick={this.register}>Register</button>
@@ -70,6 +75,7 @@ class Register extends Component {
                 <li>Email: {this.state.email}</li>
                 <li>Contact: {this.state.contact}</li>
                 <li>Education: {this.state.education}</li>
+                <li>Work Status: {this.state.workStatus}</li>
             </ul>
           </form>
         </div>
