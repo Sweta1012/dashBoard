@@ -1,0 +1,61 @@
+.user {
+    margin: 1.5%;
+    margin-top: 1%;
+    padding: 2%;
+    padding-top: 1%;
+}
+
+.bgImage {
+    background-image: url("./images/registerBackground.PNG");
+}
+
+.bgColor {
+    background-color: rgb(205, 233, 233);
+}
+
+.userInfo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(20, 114, 114);
+}
+
+.userInfo:hover {
+    color: rgb(76, 172, 172);
+}
+
+.batchRow {
+    margin: 2%;
+    margin-top: 4%;
+    width: 100%;
+}
+
+.batchGroup {
+    width: 100%;
+}
+
+.batchItem {
+    text-align: center;
+    font-size: 20px;
+}
+
+.testRow {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.testCard {
+   
+    background-color: rgb(154, 221, 221);
+}
+
+.goTest {
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(20, 114, 114);
+    font-size: 20px;
+}
+
+.footer{
+    background-color: rgba(51, 46, 46, 0.794);
+    color: aliceblue;
+    text-align: right;
+}
